@@ -1,97 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KCCITM Newsletter</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KCCITM Newsletter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>KCC Institute of Technology and Management</h1>
-            <p>KCC Official Newsletter</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">Latest News</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container">
+      <h1 class="slide-down">KCC Institute of Technology and Management</h1>
+      <img src="" alt="KCC Logo" class="logo slide-down">
+      <p>KCC Official Newsletter</p>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#news" class="nav-link">Latest News</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Welcome to KCCITM</h2>
-            <p>Stay updated with the latest news, events, and achievements of KCC Institute of Technology and Management.</p>
-        </div>
-    </section>
+  <section id="home" class="hero section hidden">
+    <div class="container">
+      <h2>Welcome to KCCITM</h2>
+      <p>Stay updated with the latest news, events, and achievements of KCC Institute of Technology and Management.</p>
+      <button class="glow-btn" onclick="window.location='#news'">See Latest News</button>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>KCC Institute of Technology and Management is a premier institution dedicated to providing quality education and fostering innovation. We offer a wide range of programs in engineering, management, and technology.</p>
+  <section id="about" class="about section hidden">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>KCC Institute of Technology and Management is a premier institution dedicated to quality education and innovation. We offer diverse programs in engineering, management, and technology.</p>
+      <div class="about-cards">
+        <div class="card fade-in">
+          <h3>Innovation</h3>
+          <p>Fostering innovative ideas and research</p>
         </div>
-    </section>
+        <div class="card fade-in">
+          <h3>Excellence</h3>
+          <p>Promoting academic and industry excellence</p>
+        </div>
+        <div class="card fade-in">
+          <h3>Community</h3>
+          <p>Connecting students, alumni, and partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="news" class="news">
-        <div class="container">
-            <h2>Latest News</h2>
-            <div class="news-item">
-                <h3>New Academic Programs Launched</h3>
-                <p>KCCITM has introduced new programs in AI and Data Science for the upcoming academic year. Admissions are now open!</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="news-item">
-                <h3>College Fest 2025</h3>
-                <p>Join us for the annual college fest from October 15th to 17th. Exciting events, competitions, and performances await!</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
-            <div class="news-item">
-                <h3>Placement Drive Success</h3>
-                <p>Over 90% of our students have been placed in top companies during the recent placement drive. Congratulations to all!</p>
-                <a href="#" class="read-more">Read More</a>
-            </div>
+  <section id="news" class="news section hidden">
+    <div class="container">
+      <h2>Latest News</h2>
+      <div class="news-items">
+        <div class="news-card fade-in">
+          <h3>New Academic Programs Launched</h3>
+          <p>KCCITM introduces new programs in AI & Data Science for the upcoming academic year. Admissions now open!</p>
+          <a href="#" class="read-more glow-btn">Read More</a>
         </div>
-    </section>
+        <div class="news-card fade-in">
+          <h3>College Fest 2025</h3>
+          <p>Join us for the annual college fest from <strong>October 15th to 17th</strong>. Exciting events and performances await!</p>
+          <a href="#" class="read-more glow-btn">Read More</a>
+        </div>
+        <div class="news-card fade-in">
+          <h3>Placement Drive Success</h3>
+          <p>Over 90% students placed in top companies during the recent placement drive. Congratulations!</p>
+          <a href="#" class="read-more glow-btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="events" class="events">
-        <div class="container">
-            <h2>Upcoming Events</h2>
-            <div class="event-item">
-                <h3>Tech Symposium 2025</h3>
-                <p>Date: November 10th, 2025</p>
-                <p>Join us for a day of innovation and technology showcasing the best projects from our students.</p>
-            </div>
-            <div class="event-item">
-                <h3>Alumni Meet</h3>
-                <p>Date: December 5th, 2023</p>
-                <p>Reconnect with old friends and mentors at our annual alumni meet.</p>
-            </div>
+  <section id="events" class="events section hidden">
+    <div class="container">
+      <h2>Upcoming Events</h2>
+      <div class="event-items">
+        <div class="event-card flip-in">
+          <h3>Tech Symposium 2025</h3>
+          <p><span class="event-date">November 10th, 2025</span></p>
+          <p>Join us for a day of innovation and technology showcasing the best projects from our students.</p>
+          <p id="countdown"></p>
         </div>
-    </section>
+        <div class="event-card flip-in">
+          <h3>Alumni Meet</h3>
+          <p><span class="event-date">December 5th, 2025</span></p>
+          <p>Reconnect with old friends and mentors at our annual alumni meet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions or need more information? Reach out to us!</p>
-            <p>Email: info@kccitm.edu.in</p>
-            <p>Phone: +91-1234567890</p>
-            <p>Address: KCC Institute of Technology and Management,Knowledge Park III, Greater Noida,U.P 201310
-                India</p>
-        </div>
-    </section>
+  <section id="contact" class="contact section hidden">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="slide-up">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="glow-btn">Send Message</button>
+        <div id="formSuccess" class="form-success"></div>
+      </form>
+      <p>Email: info@kccitm.edu.in</p>
+      <p>Phone: +91-1234567890</p>
+      <p>Address: KCC Institute of Technology and Management, Knowledge Park III, Greater Noida, U.P 201310 India</p>
+    </div>
+  </section>
 
-    <footer>
-        <div class="container">
-            <p>Made with love by Ritik</p>
-            <p>Crafted in Noida</p>
-            <p>&copy; 2025 KCC Institute of Technology and Management. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="script.js"></script>
+  <footer>
+    <div class="container">
+      <p id="footerYear"></p>
+      <p>Crafted in Noida</p>
+      <p>© <span id="copyYear"></span> KCC Institute of Technology and Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top"><span>↑</span></button>
+
+  <script src="main.js"></script>
 </body>
 </html>
